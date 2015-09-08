@@ -10,8 +10,16 @@ var toggle = function() {
 	// Grab the html element with the ID “about”
     var el = document.getElementById('about');
 
-    // Add the class “show” to the element.
+   if (hasClass(el, 'show')){
+   	removeClass( el, 'show');
+   }
+   else {
+   	// Add the class “show” to the element.
     addClass(el, 'show');
+   }
+    
+    
+    
     console.log('About!');
 };
 
