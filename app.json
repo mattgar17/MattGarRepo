@@ -1,0 +1,6 @@
+{
+  "name": "Matthew"
+  "description": "Heroku site",
+  "repository": "https://github.com/mattgar17/MattGarRepo",
+  "keywords": ["node", "express", "static"]
+}
