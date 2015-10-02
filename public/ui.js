@@ -5,6 +5,18 @@
  *                                                                                                                                 
  */
 
+var fetch = function() {
+	//grab html element with the ID "year"
+	var el = document.getElementById('year');
+	
+	//Access value of year and log to the console
+	var value = el.value;
+	console.log(value);
+	
+	vizController(value);
+};
+
+
 var toggle = function() {
 
 	// Grab the html element with the ID “about”
@@ -34,6 +46,16 @@ var initialize = function() {
     // From this point forward, when the button is clicked, the                                                                   
     // toggle function shall be invoked.                                                                                           
     button.onclick = toggle;
+    
+    
+     // Grab the 'Submit' button element, identified by the                                       
+    // 'submit-btn' id.                                                                          
+    button = document.getElementById('submit-btn');
+
+    // From this point forward, when the button is clicked, the                                 
+    // fetch function shall be invoked.                                                          
+    button.onclick = fetch;
+
 
 };
 
